@@ -5,7 +5,7 @@
   - iTunesAPI
 
 
-A music player with a unique twist!
+A music player with a unique twist! This is a fun little idea that popped into my mind so I thought I'd actualize it!
 
 In initial stages at this point. Many updates are coming!
 <br>
