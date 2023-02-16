@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		47036547299DE6E3009B6EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47036546299DE6E3009B6EF4 /* AppDelegate.swift */; };
 		47036549299DE6E3009B6EF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47036548299DE6E3009B6EF4 /* SceneDelegate.swift */; };
-		4703654B299DE6E3009B6EF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703654A299DE6E3009B6EF4 /* ViewController.swift */; };
+		4703654B299DE6E3009B6EF4 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703654A299DE6E3009B6EF4 /* GalleryViewController.swift */; };
 		4703654E299DE6E3009B6EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4703654C299DE6E3009B6EF4 /* Main.storyboard */; };
 		47036551299DE6E3009B6EF4 /* MusicApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4703654F299DE6E3009B6EF4 /* MusicApp.xcdatamodeld */; };
 		47036553299DE6E4009B6EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47036552299DE6E4009B6EF4 /* Assets.xcassets */; };
@@ -17,6 +17,9 @@
 		47036561299DE6E4009B6EF4 /* MusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47036560299DE6E4009B6EF4 /* MusicAppTests.swift */; };
 		4703656B299DE6E4009B6EF4 /* MusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703656A299DE6E4009B6EF4 /* MusicAppUITests.swift */; };
 		4703656D299DE6E4009B6EF4 /* MusicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703656C299DE6E4009B6EF4 /* MusicAppUITestsLaunchTests.swift */; };
+		4703657D299DEBEE009B6EF4 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703657C299DEBEE009B6EF4 /* GalleryCell.swift */; };
+		4703657F299DEC7A009B6EF4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703657E299DEC7A009B6EF4 /* NetworkManager.swift */; };
+		47036583299DF601009B6EF4 /* TrackResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47036582299DF601009B6EF4 /* TrackResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		47036543299DE6E3009B6EF4 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47036546299DE6E3009B6EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47036548299DE6E3009B6EF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4703654A299DE6E3009B6EF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4703654A299DE6E3009B6EF4 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		4703654D299DE6E3009B6EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47036550299DE6E3009B6EF4 /* MusicApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicApp.xcdatamodel; sourceTree = "<group>"; };
 		47036552299DE6E4009B6EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		47036566299DE6E4009B6EF4 /* MusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4703656A299DE6E4009B6EF4 /* MusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITests.swift; sourceTree = "<group>"; };
 		4703656C299DE6E4009B6EF4 /* MusicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4703657C299DEBEE009B6EF4 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		4703657E299DEC7A009B6EF4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		47036582299DF601009B6EF4 /* TrackResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +109,15 @@
 			children = (
 				47036546299DE6E3009B6EF4 /* AppDelegate.swift */,
 				47036548299DE6E3009B6EF4 /* SceneDelegate.swift */,
-				4703654A299DE6E3009B6EF4 /* ViewController.swift */,
+				4703654A299DE6E3009B6EF4 /* GalleryViewController.swift */,
 				4703654C299DE6E3009B6EF4 /* Main.storyboard */,
 				47036552299DE6E4009B6EF4 /* Assets.xcassets */,
 				47036554299DE6E4009B6EF4 /* LaunchScreen.storyboard */,
 				47036557299DE6E4009B6EF4 /* Info.plist */,
 				4703654F299DE6E3009B6EF4 /* MusicApp.xcdatamodeld */,
+				4703657C299DEBEE009B6EF4 /* GalleryCell.swift */,
+				4703657E299DEC7A009B6EF4 /* NetworkManager.swift */,
+				47036582299DF601009B6EF4 /* TrackResponse.swift */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -261,10 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4703654B299DE6E3009B6EF4 /* ViewController.swift in Sources */,
+				4703657F299DEC7A009B6EF4 /* NetworkManager.swift in Sources */,
+				4703654B299DE6E3009B6EF4 /* GalleryViewController.swift in Sources */,
+				4703657D299DEBEE009B6EF4 /* GalleryCell.swift in Sources */,
 				47036547299DE6E3009B6EF4 /* AppDelegate.swift in Sources */,
 				47036549299DE6E3009B6EF4 /* SceneDelegate.swift in Sources */,
 				47036551299DE6E3009B6EF4 /* MusicApp.xcdatamodeld in Sources */,
+				47036583299DF601009B6EF4 /* TrackResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
