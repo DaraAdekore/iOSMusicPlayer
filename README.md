@@ -1,6 +1,6 @@
 # iOSMusicPlayer
 ## Main Tools at use:
-  - UIKit
+  - UIKit(UICollectionView)
   - Concurrency with Grand Central Dispatch
   - iTunesAPI
 
